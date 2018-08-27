@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analysis.swift",
+      "line": 11,
+      "symbol": "Analysis",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analysis.swift",
+      "line": 16,
+      "symbol": "Analysis.init(a:aValue:bValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analysis.swift",
+      "line": 22,
+      "symbol": "Analysis.perform()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 16,
+      "symbol": "Analyst",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 19,
+      "symbol": "Analyst.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 23,
+      "symbol": "Analyst.stringValue(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 32,
+      "symbol": "Analyst.integerValue(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 41,
+      "symbol": "Analyst.boolValue(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 50,
+      "symbol": "Analyst.doubleValue(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst/Sources/Analyst.swift",
+      "line": 59,
+      "symbol": "Analyst.floatValue(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/yusuke.a.ohashi/src/github.com/junkpiano/Analyst"
+}
