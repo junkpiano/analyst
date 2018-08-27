@@ -9,26 +9,18 @@
 import Foundation
 
 public struct Analysis<T> {
-    let aProb: Double
-    let aVal: T
-    let bVal: T
+    let aVals: [T]
     
-    public init(a: Double, aValue: T, bValue: T) {
-        aProb = a > 1.0 ? 1.0: a
-        aVal = aValue
-        bVal = bValue
+    public init(with values: [T]) {
+        aVals = values
     }
     
-    public func perform() -> T {
-        let allcase = 1000.0
-        let aCase = allcase * aProb
+    public func run() -> T {
+        let allcase = 100 - (100 % aVals.count)
+        let aProb = 100/aVals.count
         
-        let randomNumber = arc4random_uniform(UInt32(allcase))
-        if randomNumber <= Int(aCase) {
-            return aVal
-        } else {
-            return bVal
-        }
+        let randomNumber = Int(arc4random_uniform(UInt32(allcase)))
+        return aVals[randomNumber/aProb]
     }
 
 }

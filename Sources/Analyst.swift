@@ -8,77 +8,54 @@
 
 import Foundation
 
-enum AnalysisError: Error {
-    case missingField
-    case typeMismatch
+public enum AnalysisError: Error {
+    case inValidOrNotFound
+    case notTargetted
 }
 
 public struct Analyst {
-    var info: [String: Any] = [:]
+    public static let shared = Analyst()
+    let info: [String: Any]
+    var isTarget: () -> Bool = { return true }
     
-    public init(with dictionary: [String: Any]) {
-        info = dictionary
-    }
-        
-    public func stringValue(by name: String) -> String {
-        do {
-            return try value(by: name)
-        } catch {
-            debugPrint(error)
-            return ""
+    init(target: (() -> Bool)? = nil) {
+        if let path = Bundle.main.path(forResource: "analyst", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [String: Any] {
+                    info = jsonResult
+                } else {
+                    info = [:]
+                }
+            } catch {
+                info = [:]
+            }
+        } else {
+            info = [:]
         }
     }
     
-    public func integerValue(by name: String) -> Int {
+    public func conduct<T>(by name: String, context: [String: Any]? = nil) -> AnalysisResult<T> {
         do {
-            return try value(by: name)
+            return AnalysisResult<T>(value: try value(by: name), context: context)
         } catch {
             debugPrint(error)
-            return 0
-        }
-    }
-    
-    public func boolValue(by name: String) -> Bool {
-        do {
-            return try value(by: name)
-        } catch {
-            debugPrint(error)
-            return false
-        }
-    }
-    
-    public func doubleValue(by name: String) -> Double {
-        do {
-            return try value(by: name)
-        } catch {
-            debugPrint(error)
-            return 0.0
-        }
-    }
-    
-    public func floatValue(by name: String) -> Float {
-        do {
-            return try value(by: name)
-        } catch {
-            debugPrint(error)
-            return 0.0
+            return AnalysisResult<T>(value: nil, context: context)
         }
     }
 }
 
 extension Analyst {
     func value<T>(by name: String) throws -> T {
-        guard let pattern = info[name] as? [String: Any],
-            let aProb = pattern["aProb"] as? Double
-            else {
-                throw AnalysisError.missingField
+        guard let pattern = info[name] as? [T] else {
+            throw AnalysisError.inValidOrNotFound
         }
         
-        if let aValue = pattern["aValue"] as? T,
-            let bValue = pattern["bValue"] as? T {
-            return Analysis<T>(a: aProb, aValue: aValue, bValue: bValue).perform()
+        if !isTarget() {
+            throw AnalysisError.notTargetted
         }
         
-        throw AnalysisError.typeMismatch
+        return Analysis<T>(with: pattern).run()
     }
 }

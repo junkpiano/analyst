@@ -15,6 +15,7 @@
 		58AD52152133ACE000F19388 /* Example_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD52142133ACE000F19388 /* Example_iOSTests.swift */; };
 		58AD52202133ACE000F19388 /* Example_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD521F2133ACE000F19388 /* Example_iOSUITests.swift */; };
 		58AD52372133C3C200F19388 /* Analyst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AD52362133C3C200F19388 /* Analyst.framework */; };
+		70BAA8AE21342F23003E3BC4 /* analyst.json in Resources */ = {isa = PBXBuildFile; fileRef = 70BAA8AD21342F23003E3BC4 /* analyst.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		58AD52322133C20100F19388 /* Analyst_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Analyst_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AD52342133C26100F19388 /* Analyst_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Analyst_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AD52362133C3C200F19388 /* Analyst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Analyst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BAA8AD21342F23003E3BC4 /* analyst.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = analyst.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				58AD51FF2133ACDE00F19388 /* AppDelegate.swift */,
 				58AD52012133ACDF00F19388 /* ViewController.swift */,
+				70BAA8AD21342F23003E3BC4 /* analyst.json */,
 				58AD52032133ACDF00F19388 /* Main.storyboard */,
 				58AD52062133ACE000F19388 /* Assets.xcassets */,
 				58AD52082133ACE000F19388 /* LaunchScreen.storyboard */,
@@ -247,6 +250,7 @@
 			files = (
 				58AD520A2133ACE000F19388 /* LaunchScreen.storyboard in Resources */,
 				58AD52072133ACE000F19388 /* Assets.xcassets in Resources */,
+				70BAA8AE21342F23003E3BC4 /* analyst.json in Resources */,
 				58AD52052133ACDF00F19388 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

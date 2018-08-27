@@ -27,10 +27,21 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/AnalysisError.html">AnalysisError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Structs/Analysis.html">Analysis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AnalysisResult.html">AnalysisResult</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Analyst.html">Analyst</a>
@@ -45,35 +56,17 @@
             
             <h1 id='analyst' class='heading'>Analyst</h1>
 <h2 id='usage' class='heading'>Usage</h2>
-<pre class="highlight plaintext"><code>let analyst = Analyst(with: [
-    "test": [
-        "aProb": 0.25,
-        "aValue": "test1",
-        "bValue": "test2"
-    ],
-    "test2": [
-        "aProb": 0.5,
-        "aValue": 500,
-        "bValue": 100
-    ],
-    "error1": [
-        "aProb": "0.5", // aProb must be `Double`
-        "aValue": 500,
-        "bValue": 100
-    ],
-    "error2": [
-        "aProb": 0.5,
-        "aValue": "500", // aValue and
-        "bValue": 100    // bValue must match type.
-    ]
-    ])
 
-for _ in 1...1000 {
-    print(analyst.stringValue(by: "test"))
-    print(analyst.integerValue(by: "test2"))
-    print(analyst.integerValue(by: "error1")) // =&gt; aProb is missing due to type mismatch.
-    print(analyst.stringValue(by: "error2")) // =&gt; value type mismatches.
+<p>You need to prepare <code>analyst.json</code>, which contains A/B test variants. Don&rsquo;t forget to add <code>analyst.json</code> to your build target.</p>
+<pre class="highlight plaintext"><code>{
+    "test1": ["aaaa", "bbbb", "cccc"],
+    "test2": [10000, 2000],
+    "error1": [1100, "test"],
+    "subscribeButton": ["subscribe", "register", "more detail"]
 }
+</code></pre>
+<pre class="highlight plaintext"><code>print(Analyst.shared.conduct(by: "test1").value ?? "aaa")
+// "aaaa", "bbbb", or "cccc"
 </code></pre>
 
           </section>

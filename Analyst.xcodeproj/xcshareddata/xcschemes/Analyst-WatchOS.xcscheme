@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58AD51B02133A6F500F19388"
-               BuildableName = "Analyst_WatchOS.framework"
+               BuildableName = "Analyst.framework"
                BlueprintName = "Analyst-WatchOS"
                ReferencedContainer = "container:Analyst.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58AD51B02133A6F500F19388"
-            BuildableName = "Analyst_WatchOS.framework"
+            BuildableName = "Analyst.framework"
             BlueprintName = "Analyst-WatchOS"
             ReferencedContainer = "container:Analyst.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58AD51B02133A6F500F19388"
-            BuildableName = "Analyst_WatchOS.framework"
+            BuildableName = "Analyst.framework"
             BlueprintName = "Analyst-WatchOS"
             ReferencedContainer = "container:Analyst.xcodeproj">
          </BuildableReference>

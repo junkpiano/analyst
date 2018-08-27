@@ -14,23 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let analyst = Analyst(with: [
-            "test": [
-                "aProb": 0.25,
-                "aValue": "test1",
-                "bValue": "test2"
-            ],
-            "test2": [
-                "aProb": 0.5,
-                "aValue": 500,
-                "bValue": 100
-            ]
-            ])
 
-        for _ in 1...1000 {
-            print(analyst.stringValue(by: "test"))
-            print(analyst.integerValue(by: "test2"))
-        }
+        print(Analyst.shared.conduct(by: "test1").value ?? "aaa")
+        print(Analyst.shared.conduct(by: "test2").value ?? 1000)
+        print(Analyst.shared.conduct(by: "subscribeButton").value ?? "push")
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,3 +28,18 @@ class ViewController: UIViewController {
 
 }
 
+extension UIColor {
+    static func hex(_ hex: NSString, alpha: Float) -> UIColor {
+        let hexStr = hex.replacingOccurrences(of: "#", with: "")
+        let scanner = Scanner(string: hexStr as String)
+        var color: UInt32 = 0
+        if scanner.scanHexInt32(&color) {
+            let r = CGFloat((color & 0xFF0000) >> 16) / 255.0
+            let g = CGFloat((color & 0x00FF00) >> 8) / 255.0
+            let b = CGFloat(color & 0x0000FF) / 255.0
+            return UIColor(red:r,green:g,blue:b,alpha:CGFloat(alpha))
+        } else {
+            return UIColor.white;
+        }
+    }
+}

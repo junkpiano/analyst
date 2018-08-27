@@ -26,6 +26,10 @@
 		58AD523A2133C71B00F19388 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD52382133C71900F19388 /* Analysis.swift */; };
 		58AD523B2133C71C00F19388 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD52382133C71900F19388 /* Analysis.swift */; };
 		58AD523C2133C71C00F19388 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD52382133C71900F19388 /* Analysis.swift */; };
+		70BAA8A921342AED003E3BC4 /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BAA8A821342AED003E3BC4 /* AnalysisResult.swift */; };
+		70BAA8AA21342AED003E3BC4 /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BAA8A821342AED003E3BC4 /* AnalysisResult.swift */; };
+		70BAA8AB21342AED003E3BC4 /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BAA8A821342AED003E3BC4 /* AnalysisResult.swift */; };
+		70BAA8AC21342AED003E3BC4 /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BAA8A821342AED003E3BC4 /* AnalysisResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,7 @@
 		58AD51DF2133A90800F19388 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		58AD51E42133A90800F19388 /* Analyst-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Analyst-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AD52382133C71900F19388 /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
+		70BAA8A821342AED003E3BC4 /* AnalysisResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +162,7 @@
 			children = (
 				58AD51862133A3D300F19388 /* Analyst.swift */,
 				58AD52382133C71900F19388 /* Analysis.swift */,
+				70BAA8A821342AED003E3BC4 /* AnalysisResult.swift */,
 				58AD516E2133A2C400F19388 /* Analyst.h */,
 				58AD51DF2133A90800F19388 /* Info-tvOS.plist */,
 				58AD516F2133A2C500F19388 /* Info.plist */,
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58AD51872133A3D300F19388 /* Analyst.swift in Sources */,
+				70BAA8A921342AED003E3BC4 /* AnalysisResult.swift in Sources */,
 				58AD52392133C71900F19388 /* Analysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58AD51882133A3D300F19388 /* Analyst.swift in Sources */,
+				70BAA8AA21342AED003E3BC4 /* AnalysisResult.swift in Sources */,
 				58AD523A2133C71B00F19388 /* Analysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58AD522E2133B00400F19388 /* Analyst.swift in Sources */,
+				70BAA8AB21342AED003E3BC4 /* AnalysisResult.swift in Sources */,
 				58AD523B2133C71C00F19388 /* Analysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58AD522F2133B00500F19388 /* Analyst.swift in Sources */,
+				70BAA8AC21342AED003E3BC4 /* AnalysisResult.swift in Sources */,
 				58AD523C2133C71C00F19388 /* Analysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
