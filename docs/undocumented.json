@@ -1,86 +1,86 @@
 {
   "warnings": [
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analysis.swift",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analysis.swift",
       "line": 11,
       "symbol": "Analysis",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analysis.swift",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analysis.swift",
       "line": 14,
       "symbol": "Analysis.init(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analysis.swift",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analysis.swift",
       "line": 18,
       "symbol": "Analysis.run()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/AnalysisResult.swift",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
       "line": 11,
-      "symbol": "AnalysisResult",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/AnalysisResult.swift",
-      "line": 12,
-      "symbol": "AnalysisResult.value",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/AnalysisResult.swift",
-      "line": 13,
-      "symbol": "AnalysisResult.context",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst.swift",
-      "line": 11,
-      "symbol": "AnalysisError",
+      "symbol": "AnalystError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst.swift",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
       "line": 12,
-      "symbol": "AnalysisError.inValidOrNotFound",
+      "symbol": "AnalystError.inValidOrNotFound",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst.swift",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
       "line": 13,
-      "symbol": "AnalysisError.notTargetted",
+      "symbol": "AnalystError.notTargetted",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst.swift",
-      "line": 16,
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
+      "line": 14,
+      "symbol": "AnalystError.sourceNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
+      "line": 15,
+      "symbol": "AnalystError.invalidSourceFormat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
+      "line": 18,
       "symbol": "Analyst",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst.swift",
-      "line": 17,
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
+      "line": 19,
       "symbol": "Analyst.shared",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst.swift",
-      "line": 39,
-      "symbol": "Analyst.conduct(by:context:)",
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
+      "line": 27,
+      "symbol": "Analyst.init(target:source:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yusuke/src/github.com/junkpiano/analyst/Sources/Analyst/Analyst.swift",
+      "line": 32,
+      "symbol": "Analyst.conduct(by:for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

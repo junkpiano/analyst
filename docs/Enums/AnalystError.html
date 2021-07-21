@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Analyst Structure Reference</title>
+    <title>AnalystError Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/Analyst" class="dashAnchor"></a>
-    <a title="Analyst Structure Reference"></a>
+    <a name="//apple_ref/swift/Enum/AnalystError" class="dashAnchor"></a>
+    <a title="AnalystError Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Analyst 0.1.0 Docs</a> (0% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Analyst Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Analyst Structure Reference
+        AnalystError Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -59,11 +59,11 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Analyst</h1>
+            <h1>AnalystError</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Analyst</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AnalystError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
 
                 </div>
               </div>
@@ -76,9 +76,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AnalystAAV6sharedABvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AnalystAAV6sharedABvpZ">shared</a>
+                    <a name="/s:7Analyst0A5ErrorO17inValidOrNotFoundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/inValidOrNotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Analyst0A5ErrorO17inValidOrNotFoundyA2CmF">inValidOrNotFound</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -93,7 +93,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">Analyst</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">inValidOrNotFound</span></code></pre>
 
                         </div>
                       </div>
@@ -103,9 +103,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AnalystAAV6target6sourceABSbycSg_10Foundation3URLVSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(target:source:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AnalystAAV6target6sourceABSbycSg_10Foundation3URLVSgtcfc">init(target:<wbr>source:<wbr>)</a>
+                    <a name="/s:7Analyst0A5ErrorO12notTargettedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notTargetted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Analyst0A5ErrorO12notTargettedyA2CmF">notTargetted</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -120,7 +120,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">target</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notTargetted</span></code></pre>
 
                         </div>
                       </div>
@@ -130,9 +130,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AnalystAAV7conduct2by3forxSS_xmtKlF"></a>
-                    <a name="//apple_ref/swift/Method/conduct(by:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AnalystAAV7conduct2by3forxSS_xmtKlF">conduct(by:<wbr>for:<wbr>)</a>
+                    <a name="/s:7Analyst0A5ErrorO14sourceNotFoundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/sourceNotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Analyst0A5ErrorO14sourceNotFoundyA2CmF">sourceNotFound</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -147,7 +147,34 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="n">conduct</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">sourceNotFound</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Analyst0A5ErrorO19invalidSourceFormatyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidSourceFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Analyst0A5ErrorO19invalidSourceFormatyA2CmF">invalidSourceFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidSourceFormat</span></code></pre>
 
                         </div>
                       </div>
