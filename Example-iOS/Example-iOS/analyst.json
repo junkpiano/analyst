@@ -1,6 +1,0 @@
-{
-    "test1": ["aaaa", "bbbb", "cccc"],
-    "test2": [10000, 2000],
-    "error1": [1100, "test"],
-    "subscribeButton": ["subscribe", "register", "more detail"]
-}
